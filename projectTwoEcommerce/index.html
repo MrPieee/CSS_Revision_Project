@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is ecommmerce website name of Hull expresss, jsndfijsds fjdsf sdfsd">
+
+    <title>CSS Revision Express</title>
+    <!-- Title Logo set -->
+    <link rel="shotrcut icon" type="x-icon" href="./images/Logos.svg">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    
+
+
+<!-- Nav Starts here -->
+    <div class="flexCenter">
+        <button id="openBtn"><i class="fa-solid fa-bars"></i></button>
+        <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav id="navber">
+        
+        <div class="navUpper">
+            <ul class="navList flexSpaceAround">
+                <li><a href="/index.html" class="navLink">Home</a></li>
+                <li><a href="/register.html" class="navLink">Register</a></li>
+                <li><a href="/login.html" class="navLink">LogIn</a></li>
+                <li><a href="/index.html" class="navLink">LogOut</a></li>
+                <li ><a href="/contact.html" class="navLink">Contact</a></li>
+                <li class="profileLogo">
+                    <a href="/profile.html" class="navLink ">
+                        <img src="./images/profile.jpg" alt="profileImage">
+                    </a>
+                 </li>
+            </ul>
+        </div>
+
+        <div class="navLower">
+            <ul class="navlistLower flexSpaceAround">
+                <li><h3><a href="/index.html" class="navLink">CSS Express</a></h3></li>
+                <li><input name="Serach input" placeholder="Serach Your Product" type="text"><button class="fa-solid fa-magnifying-glass"></button></li>
+                <li><h3><a href="/cart.html" class="navLink"><i class="fa-solid fa-cart-shopping"></i> CART-2Products:$312 </a></h3></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Nav endss here -->
+
+<!-- Header Start Here -->
+
+    <header class="header">
+
+        <div class="banner flexCenter">
+            <marquee class="banner__title" behavior="" direction="">50% Sales going on</marquee>
+            <div class="features flexSpaceAround">
+                <article class="feature flexCenter">
+                    <i class="fa-solid fa-truck  feature__icon"></i>
+                    <h3>Shipping within 7 days</h3>
+                </article>
+                <article class="feature flexCenter">
+                    <i class="fa-brands fa-rocketchat feature__icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flexCenter">
+                    <i class="fa-regular fa-credit-card  feature__icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+
+    </header>
+
+<!-- Header end Here -->
+<!-- <label for="computers">
+    <input
+      type="checkbox"
+      name="computers"
+      id="computers"
+      value="computers"
+    />
+    Computers
+  </label> -->
+<!-- Main Start Here -->
+
+    <main class="flexCenter">
+
+        <div class="slideBar">
+            <section class="catagory">
+                <h2>Catagory</h2>
+                <ul>
+                    <li><label for="mobail"><input type="checkbox" value="mobail" id="mobail" name="mobail">Mobaile</label></li>
+                    <li><label for="Tablets"><input type="checkbox" value="Tablets" id="Tablets" name="Tablets">Tablets</label></li>
+                    <li><label for="Telivisions"><input type="checkbox" value="Telivisions" id="Telivisions" name=" Telivisions">TV</label></li>
+                    <li><label for="watch"><input type="checkbox" value="watch" id="watch" name="watch">Wtach</label></li>
+                    <li><label for="cap"><input type="checkbox" value="cap" id="cap" name="cap">Cap</label></li>
+                </ul>
+            </section>
+
+            <section class="priceRange">
+                <h2>Price Range</h2>
+                <ul>
+                    <li><label for="price"><input type="radio" value="[ $0-$20]" id="price" name="price"> $0-$20</label></li>
+                    <li><label for="price"><input type="radio" value="[ $21-$50]" id="price" name="price"> $21-$50</label></li>
+                    <li><label for="price"><input type="radio" value="[$51-$100]" id="price" name="price"> $51-$100</label></li>
+                    <li><label for="price"><input type="radio" value="[$101-$500]" id="price" name="price"> $101-$500</label></li>
+                    <li><label for="price"><input type="radio" value="[ $501+]" id="price" name="price"> $501+</label></li>
+                </ul>
+            </section>    
+
+            <section class="priceRange">
+                <h2>Dalivary</h2>
+                <ul>
+                    <li><label for="freeDalivary"><input type="radio" value="free" id="freeDalivary" name="dalivary"> Free</label></li>
+                    <li><label for="paidDalivary"><input type="radio" value="paid" id="paidDalivary" name="dalivary"> Paid</label></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="mainContent">
+            <div class="actions flexSpaceAround">
+                <div class="slections">
+                    <label for="productSort">Sort By:</l>
+                    <select name="productSort" id="productSort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest Price</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest discount first</option>
+                    </select>
+                </div>
+                <div class="searchAct">
+                    <input name="Serach input" placeholder="Serach Your Product" type="text">
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                </div>
+            </div>
+
+            <section class="productSect">
+
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>5 in stock \ 3 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product1.jpeg" alt="productOne">
+                        <h3>Altech V4 Gaming Mouse</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$50</h4> 
+                        <p>Rating: 4.5/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>4 in stock \ 12 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product2.jpeg" alt="productTwo">
+                        <h3>Apple Smart Air Pods</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$80</h4> 
+                        <p>Rating: 4.8/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>10 in stock \ 14 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product3.jfif" alt="productOne">
+                        <h3>Stylish Men Sunglass</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$20</h4> 
+                        <p>Rating: 4.3/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>8 in stock \ 19 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product4.jpg" alt="productOne">
+                        <h3>Xiaomi Gaming Headphone</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$160</h4> 
+                        <p>Rating: 4.2/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                
+                <article class="card">
+                    <div class="productHead">
+                        <h3>10 in stock \ 3 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product5.jpg" alt="productOne">
+                        <h3>Mercedes‑Benz Sporst Car</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$1M</h4> 
+                        <p>Rating: 4.7/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>10 in stock \ 60 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product6.jpg" alt="productSix">
+                        <h3>Apple Smart Air Pods</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$750</h4> 
+                        <p>Rating: 4.7/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>9 in stock \ 14 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product7.jpg" alt="productSeven">
+                        <h3>Canon DSLR Camera</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$1700</h4> 
+                        <p>Rating: 4.4/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="productHead">
+                        <h3>46 in stock \ 38 sold</h3>
+                    </div>
+                    <div class="productDesc">
+                        <img src="./images/product8.jpg" alt="productEight">
+                        <h3>Nikee Snikers Shoes</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis. <a href="/productDetails.html">Read More ...</a></p>
+                        <h4>$40</h4> 
+                        <p>Rating: 4.9/5</p>
+                        <button>Add to Cart </button>
+                    </div>
+                </article>
+
+            </section>
+
+            <div class="pagiNation">
+                <section class="pages">
+                    <button class="fa-solid fa-less-than" ></button>
+                    <button class="fa-solid fa-2" ></button>
+                    <button class="fa-solid fa-3" ></button>
+                    <button class="fa-solid fa-4" ></button>
+                    <button class="fa-solid fa-5" ></button>
+                    <button class="fa-solid fa-6" ></button>
+                    <button class="fa-solid fa-7" ></button>
+                    <button class="fa-solid fa-7" ></button>
+                    <button class="fa-solid fa-9" ></button>
+                    <button class="fa-solid fa-greater-than" ></button>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
+<!-- Main ends Here -->
+
+<!-- Footer start here -->
+
+    <footer class="flexSpaceAround">
+
+        <div class="footerLeft flexSpaceAround" >
+            <h3>Subsrcibe for a cookie:-</h3>
+            <div>
+                 <input type="email" placeholder="Enter Your varyfied Email"> <button>subscribe</button>
+            </div>
+        </div>
+
+        <div class="footerRight">
+            <h3>&copy;Copyright-2024 CSS Express. All Right Reserve</h3>
+        </div>
+
+    </footer>
+
+<!-- Footer ends here -->
+    
+</body>
+
+    <script src="./script.js"></script>
+
+
+</html>

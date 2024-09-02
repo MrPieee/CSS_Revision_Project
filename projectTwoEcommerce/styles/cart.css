@@ -1,0 +1,131 @@
+main{
+    padding: 2rem;
+}
+
+.cartItems{
+    flex: 2;
+}
+
+
+.itemAct{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    pad: 1rem;
+}
+ .itemActSys{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.itemProduct{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid #202902;
+    margin: .5rem;
+}
+
+.itemSelect input{
+    width: 2rem;
+}
+
+.itemProductDetail{
+    gap: 1rem;
+}
+
+.itemProductDetail .itemProductImg{
+    width: 25rem;
+}
+
+.itemProductImg img{
+    width: 100%;
+}
+
+.itemProductIDD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.itemProductIDD button{
+    font-size: 1.4rem;
+    /* border: none; */
+    cursor: pointer;
+}
+.itemProductIDD span{
+    font-size: 1.4rem;
+}
+
+
+
+.paymentAndPrice{
+    flex:2;
+}
+.paySum h2{
+    margin:2rem 0;
+}
+.costs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.costs hr{
+    border: 1px solid black;
+    width: 70%;
+}
+.pybtn button{
+    text-transform: uppercase;
+    height: 3rem;
+    width: 100%;
+    margin: .5rem;
+    font-weight: 500;
+    transition: var(--transiton);
+    padding:.5rem 1rem;
+    border: 1px solid #02271f;
+    font-size: 1.1rem;
+    background-color: #02271f;
+    color: white;
+    cursor: pointer;
+}.pybtn button:hover{
+    background-color: #ffffff;
+    color: #02271f;
+}
+.payMethod{
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.payMethod h3{
+    margin: 2rem;
+}
+
+
+@media screen and (max-width:990px) {
+   
+    main{
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:780px) {
+   
+    main{
+        flex-direction: column;
+    }
+    .itemProductDetail .itemProductImg{
+        width: 20rem;
+    }
+
+}
+

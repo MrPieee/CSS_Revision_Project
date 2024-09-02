@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS ecommerce Product Details Page">
+
+    <title>Product Details Page</title>
+    <!-- Title Logo set -->
+    <link rel="shotrcut icon" type="x-icon" href="./images/Logos.svg">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/productDetails.css">
+
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    
+
+
+<!-- Nav Starts here -->
+    <div class="flexCenter">
+        <button id="openBtn"><i class="fa-solid fa-bars"></i></button>
+        <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav id="navber">
+        
+        <div class="navUpper">
+            <ul class="navList flexSpaceAround">
+                <li><a href="/index.html" class="navLink">Home</a></li>
+                <li><a href="/register.html" class="navLink">Register</a></li>
+                <li><a href="/login.html" class="navLink">LogIn</a></li>
+                <li><a href="/index.html" class="navLink">LogOut</a></li>
+                <li ><a href="/contact.html" class="navLink">Contact</a></li>
+                <li class="profileLogo">
+                    <a href="/profile.html" class="navLink ">
+                        <img src="./images/profile.jpg" alt="profileImage">
+                    </a>
+                 </li>
+            </ul>
+        </div>
+
+        <div class="navLower">
+            <ul class="navlistLower flexSpaceAround">
+                <li><h3><a href="/index.html" class="navLink">CSS Express</a></h3></li>
+                <li><input name="Serach input" placeholder="Serach Your Product" type="text"><button class="fa-solid fa-magnifying-glass"></button></li>
+                <li><h3><a href="/cart.html" class="navLink"><i class="fa-solid fa-cart-shopping"></i> CART-2Products:$312 </a></h3></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Nav endss here -->
+
+<!-- Main Start Here -->
+
+    <main class='detailProduct flexSpaceAround'>
+        <section class="productImg">
+            <img src="./images/product4.jpg" alt="headPhone">
+        </section>
+        <section class="descProduct">
+            <h3>Xiaomi Gaming Headphone</h3><br>
+            <p><strong>Description :</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam debitis consequatur explicabo consectetur nam et aut, reiciendis nihil itaque id animi alias expedita aliquam soluta ratione ea numquam, quibusdam natus quisquam maiores, cumque perspiciatis ullam! Obcaecati, doloribus commodi. Minus aspernatur, veritatis omnis officiis deleniti aperiam temporibus sapiente consequuntur quod corrupti! <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati suscipit ad, sunt corrupti error veniam omnis at asperiores voluptatibus commodi eos voluptate. Voluptatum dolores repellendus harum distinctio consectetur sit expedita temporibus totam, molestiae inventore! Dolore ratione natus eligendi odio omnis.</p><br>
+            <h4>Catagory : Headphone</h4><br>
+            <h4>Price : $160</h4><br>
+            <p>Rating :  4.2/5</p>
+            <div class="actBtn">
+                <button>Add To Cart</button>
+                <a href="/index.html"><button> <---- Back to shopping</button></a>
+            </div>
+        </section>
+    </main>
+
+<!-- Main ends Here -->
+
+<!-- Footer start here -->
+
+    <footer class="flexSpaceAround">
+
+        <div class="footerLeft flexSpaceAround" >
+            <h3>Subsrcibe for a cookie:-</h3>
+            <div>
+                 <input type="email" placeholder="Enter Your varyfied Email"> <button>subscribe</button>
+            </div>
+        </div>
+
+        <div class="footerRight">
+            <h3>&copy;Copyright-2024 CSS Express. All Right Reserve</h3>
+        </div>
+
+    </footer>
+
+<!-- Footer ends here -->
+    
+</body>
+
+    <script src="./script.js"></script>
+
+
+</html>

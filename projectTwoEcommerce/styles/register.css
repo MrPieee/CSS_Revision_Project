@@ -1,0 +1,64 @@
+
+
+.registarForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.registarForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111211;
+    padding: 1rem 2rem ;
+    border-radius: .5rem;
+}
+
+.registarForm form input{
+    width: 25rem;
+    background-color: #111211;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 1rem ;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+}
+
+.registarForm form button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000000;cursor: pointer;
+    border-radius: .3rem;
+} .registarForm form button:hover{
+    background-color: #000000;
+    color: #ffffff;cursor: pointer;
+}
+
+
+
+@media screen and (max-width:780px) {
+    .registarForm form{
+        padding: 1rem;
+    }
+    
+    .registarForm form input{
+        width: 20rem;
+    }
+    .registarForm form button{
+        font-size: 1.1rem;
+    }
+    
+}
+

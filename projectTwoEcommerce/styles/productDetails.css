@@ -1,0 +1,48 @@
+.detailProduct{
+    padding: 1rem;
+}
+
+.productImg{
+    flex: 2;
+    padding: 2rem;
+}
+.productImg img{
+    width: 100%;
+
+}
+
+.descProduct{
+    flex:2;
+}
+
+.actBtn{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem;
+   width: 100%;
+}
+.actBtn a{
+    width: 70%;
+}
+.actBtn button{
+    text-transform: uppercase;
+    height: 3rem;
+    width: 70%;
+    margin: .5rem;
+    font-weight: 500;
+    transition: all .3s;
+    padding:.5rem 1rem;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}.actBtn button:hover{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: midnightblue;
+}
+.actBtn a button{
+    width: 100%;
+}

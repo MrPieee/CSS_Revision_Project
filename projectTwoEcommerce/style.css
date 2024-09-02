@@ -8,7 +8,10 @@
     --secondary-color:#059213ab;
     --transiton : all .5s;
 }
-
+::selection{
+    background-color: #031a30;
+    color: #ffffff;
+}
 
 *{
     margin: 0;
